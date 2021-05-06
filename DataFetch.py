@@ -4,7 +4,7 @@
 for Daily data we'll get it from NSEPy or Yahoo finance
 for intraday data we'll need to subscribe for Zerodha/NSE API
 '''
-
+import trendln
 from nsepy import get_history
 import numpy as np
 import pandas as pd
@@ -33,3 +33,8 @@ while True:
         Stock_History = get_history(symbol=h,
                                     start=date(a, b, c),
                                     end=date(d, e, g))
+
+
+
+
+def datapro():
